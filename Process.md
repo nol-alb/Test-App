@@ -1,0 +1,4 @@
+- I created a react app template
+- mkdir backend, npm init 
+- npm start starts a development server
+- Faced cors issue which really slowed me down, fixed it following (https://www.educative.io/edpresso/how-to-fix-socketio-cors-error-in-react-with-node)
