@@ -66,3 +66,6 @@ Installed all the dependencies and got started with the code and the setup!
 - Faced cors issue which really slowed me down, fixed it following (https://www.educative.io/edpresso/how-to-fix-socketio-cors-error-in-react-with-node) It was basically an access issue I tried to solve with multiple lines of code, but this resource helped me out pretty quick.
 - socket io documentaion was super helpful!!
 
+#### UI
+[!UI](https://github.com/nol-alb/Test-App/blob/master/Images/Screen%20Shot%202022-02-15%20at%2012.58.22%20PM.png)
+
