@@ -1,6 +1,6 @@
 #  Websocket Project
 
-This test project is confidential.
+This test project is confidential. {Check the notes section at the bottom to learn how to run the application}
 
 ## Time frame
 
@@ -52,10 +52,15 @@ Installed all the dependencies and got started with the code and the setup!
 - The front end for this program is written in the file app.js, I added some css and styles just to make the player look good
 - The backend is stored in a folder called backend and written in index.js (following naming conventions stated in tutorials and documentation)
 
-- cd into the project directoru and type in the command winfow "npm start" starts the react app
-- cd into the backend and type in node index and make sure you get the connected message to ensure the socket connection is made
 
-Issues That I faced
+#### How to Run
+- git clone this branch of the repository
+- 
+- cd into the project directory and type in the command window "npm start" this starts the react app
+- cd into the backend and type in node index and make sure you get the connected message to ensure the socket connection is made
+- A react app webpage should've opened up for you
+
+#### Issues That I faced
 - Starting out with web dev, i sttruggled a bit to get an understanding of all the moving parts but a little patience and I was good to go
 
 - Faced cors issue which really slowed me down, fixed it following (https://www.educative.io/edpresso/how-to-fix-socketio-cors-error-in-react-with-node) It was basically an access issue I tried to solve with multiple lines of code, but this resource helped me out pretty quick.
