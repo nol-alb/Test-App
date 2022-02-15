@@ -67,5 +67,5 @@ Installed all the dependencies and got started with the code and the setup!
 - socket io documentaion was super helpful!!
 
 #### UI
-[!UI](https://github.com/nol-alb/Test-App/blob/master/Images/Screen%20Shot%202022-02-15%20at%2012.58.22%20PM.png)
+![alt text](https://github.com/nol-alb/Test-App/blob/master/Images/Screen%20Shot%202022-02-15%20at%2012.58.22%20PM.png)
 
