@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-//useEffect hook so everyone can listen 
+// Using UseEffect Hook
 import React, { useState, useEffect} from 'react';
+//Setting up the client IO
 import io from "socket.io-client"
+//Getting the file path using audioFile for play and pause
 import audioFile from "./test_audio.mp3"
 
-
+//Connecting the socket
 const socket = io.connect('http://localhost:3001');
-
+//Initialising the Audio setup
 const audio = new Audio();
 
 
@@ -23,18 +25,29 @@ function App() {
 
 
   useEffect(() => {
+    //If socket is active it will receive message of play from the user
     function receiveMessage(m) {
       console.log(m);
+      /*
+      Run this code if you want to have just the server be a media player that takes client requests and has stopping control
       if(role == 'server') {
         audio.src=m.path;
         audio.play();
       }
+      */
+
+      if(role == 'server'||'client') {
+        audio.src=m.path;
+        audio.play();
+      }
+      //SetPlaying will give the string to let you know
       setPlaying(m.name)
     }
     function stopAudio() {
       setPlaying('')
     }
 
+    //Using socket.on to connect the play message and audio path information
     socket.on('play',receiveMessage);
     socket.on('stop', stopAudio);
 
@@ -47,6 +60,8 @@ function App() {
 //role is a dependency array
   }, [role]);
 
+// The audio stop functionality is broken
+//To Do: better messaging to the server
   useEffect (() => {
     function handleAudioStop(){
       socket.emit('stop');
