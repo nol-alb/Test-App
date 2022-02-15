@@ -43,9 +43,9 @@ Key functions, extensions, classes, enums, etc. should be annotated with concise
 
 
 ## Notes from candidate
-In my little time developing web application (just 1 project tbh!) I had never heard of sockets and socket io, so this challenge was interesting to me as it served an oppurtunity to understand how one server can stream files to multiple client instances at the same time. 
+In my little time developing web applications, I had never heard of sockets and socket io, so this challenge was interesting to me as it served an oppurtunity to understand how one server can stream files to multiple client instances at the same time. 
 
-To fully understand how this could work and to give myself a value add I proceeded to create a react and node.js application that can be run!
+To fully understand how this could work and to give myself a value add I proceeded to create a react and node.js application that can be run.
 
 Installed all the dependencies and got started with the code and the setup!
 
